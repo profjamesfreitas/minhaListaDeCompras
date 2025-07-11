@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -18,14 +17,14 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         .btn-primary {
-            background-color: #10b981; /* Verde esmeralda */
+            background-color: #22c55e; /* Verde */
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 0.5rem;
             transition: background-color 0.3s ease;
         }
         .btn-primary:hover {
-            background-color: #059669; /* Verde mais escuro no hover */
+            background-color: #16a34a; /* Verde mais escuro no hover */
         }
         .btn-remove {
             background-color: #ef4444; /* Vermelho */
@@ -56,10 +55,8 @@
     <div class="container max-w-2xl w-full p-8 space-y-6">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Minha Lista de Compras</h1>
 
-        <!-- Formulário para adicionar itens -->
         <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
             <h2 class="text-xl font-semibold text-gray-700 mb-4">Adicionar Novo Item</h2>
-            <!-- Nome da Lista separado -->
             <div class="mb-4">
                 <label for="listName" class="block text-sm font-medium text-gray-700 mb-1">Nome da Lista:</label>
                 <input type="text" id="listName" placeholder="Ex: Compras da Semana" class="focus:ring-emerald-500 focus:border-emerald-500">
@@ -77,11 +74,9 @@
             <button id="addItemBtn" class="w-full btn-primary font-semibold">Adicionar Item</button>
         </div>
 
-        <!-- Lista de itens -->
         <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
             <h2 class="text-xl font-semibold text-gray-700 mb-4">Itens na Lista</h2>
             <div id="shoppingList" class="space-y-3">
-                <!-- Itens serão renderizados aqui -->
                 <p id="noItemsMessage" class="text-gray-500 text-center">Lista vazia!</p>
             </div>
         </div>
